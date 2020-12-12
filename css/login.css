@@ -1,3 +1,5 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
 body{
   margin: 0;
   padding: 0;
@@ -31,12 +33,14 @@ body{
   margin: 8px 0;
   border-bottom: 1px solid #ec1839;
 }
-.textbox i{
+
+ .textbox i{
   width: 26px;
   float: left;
   text-align: center;
+  color: #ec1839;
 }
-.textbox .text{ /*input*/
+.textbox input{ /*both input*/
   border: none;
   outline: none;
   background: none;
