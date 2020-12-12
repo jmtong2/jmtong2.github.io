@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Page</title>
+  <link rel="stylesheet" media="screen" href="css/login.css">
+
+  <script type="text/javascript">
+
+  function validate(){
+    var emailVal = document.getElementById("email").value;
+    if(emailVal == 'john_mark_villaluz@dlsu.edu.ph' || emailVal == 'sashmir.yap@dlsu.edu.ph'){
+        window.location.href="index.html"
+    } else
+        alert('Email address not supported!');
+  }
+  </script>
+
+</head>
+<body>
+  <div class="login container">
+    <h1>Login</h1>
+    <!-- textbox -->
+    <div class="textbox">
+      <i class="fas fa-at"></i>
+      <input id="email" class="text" type="text" name="email" placeholder="Email here..">
+    </div>
+    <!-- /textbox -->
+
+    <input class="btn" type="button" name="Log In" value="Log In" onclick="validate();">
+  </div>
+
+</body>
+</html>
